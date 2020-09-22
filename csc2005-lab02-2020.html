@@ -3,50 +3,55 @@
 <title>Hello World</title>
 
 <style>
-body {background-color: powderblue;}
-h1 {color: #DC143C;}
-h2 {color: #6666ff;}
-p {color: red;
-font-size: 1em; }
+	body {background-color: powderblue;}
+	h1 {color: #ffccff;}
+	h2 {color: #6666ff;}
+	p {color: red;
+	font-size: 1em; }
 
-    nav .nav-wrapper {
-    position: relative;
-    height: 80%;
-    color: #000080;
-}
+        nav{
+            background: #9933ff;
+        }
+
+    	nav .nav-wrapper {
+    	position: relative;
+    	height: 10%;
+    	color: #000080;
+	}
     
-iframe, object, embed {
-    max-width: 100%;
-}
+	iframe, object, embed {
+    	max-width: 100%;
+	}
 
-.video {
-    text-align: center;
-}
+	.video {
+    	text-align: center;
+	}
 
-box {
-  background-color: lightgrey;
-  width: 150px;
-  border: 10px solid green;
-  padding: 50px;
-  margin: 10px;
+	.content-box {
+	box-sizing: border-box;
+  	background-color: lightgrey;
+  	width: 600px;
+	height: 300px;
+  	border: 10px solid green;
 
-.container-body {
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-}
+
+	.container-body {
+    	margin: auto;
+    	width: 70%;
+    	padding: 10px;
+	}
     
-.container-footer {
-margin: auto;
-width: 70%;
-padding-left: 10px;
-padding-top: 5px;
-padding-bottom: 15px;
- }
+	.container-footer {
+	margin: auto;
+	width: 70%;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+ 	}
     
-.page-footer {
-background: #7A684C;
-    }
+	.container-footer {
+	background: #7A684C;
+ 	   }
 }
 
 </style>
@@ -55,25 +60,30 @@ background: #7A684C;
     <nav role="navigation">
         <div class="nav-wrapper container">
                 
-            <h1><center>My favourite video</center></h1>
+            <h1><center></br>My favourite video</center></h1>
         </div>
     </nav>
-
+    </br>
     <div class="container-body">
         <div class = "video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KtvwustmEDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="720" height="480" src="https://www.youtube.com/embed/KtvwustmEDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </br></br></br></br>
-    <center><box>
-            This video taught me the purpose of HCI.
-    </box></center>
-    </div>
+    <center><div class="content-box">
+            <p><u>This video taught me the purpose of HCI.</u></p>
+	    <p>“People should never feel like a failure when using technology.</p> 
+	    <p>Like the customer, the user is always right. If software crashes, it is the software designer’s fault.</p>
+	    <p>If someone can’t find something on a web site, it is the web designer’s fault.</p>
+	    <p>The big difference between good and bad designers is how they handle people struggling with their design. Technology serves humans. Humans do not serve technology.”</p> <p>..(Joshua Porter)</p>
 
-   <footer class="page-footer">
+
+    </div>
+    </center>
+	<footer class="page-footer">
         <div class="container-footer">
             Made by <a class="orange-text text-lighten-3" href="https://whatsbeforealan.github.io/csc2005-lab02-2020/">WHATSBEFOREALAN</a>
         </div>
-    </footer>
+	</footer>
 </body>
 </html>
